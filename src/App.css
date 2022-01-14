@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Styles */
+html{
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+.containerleft{
+  width: 270px;
+  margin: 0;
+  height: 100%;
+
+}
+.container{
+  max-width: 850px;
+  border: 1px solid black;
+  width: 100%;
+}
+.flex{
+  display: flex;
+}
+.column{
+  flex-direction: column;
+}
+.aligncenter{
+  align-items: center;
+}
+.between{
+  justify-content: space-between;
+}
+.center{
+  justify-content: center;
+}
+.flex45{
+  flex: 0 1 45%;
+}
+.color{
+  color: white;
+}
+
+
+/* Left Container css */
+nav{
+  background-color: black;
+  height: 100%;
+}
+.logo a img{
+  width: 50px;
+  height: 50px;
+  margin: 70px 0px 0px 80px;
+}
+.pages{
+  margin-top: 50px;
+  margin-left: 70px;
+}
+.pages li {
+  margin-top: 40px;
+}
+.pages li a{
+   text-decoration: none;
+}
+.pages li i{
+  width: 10px;
+  color: white;
+  height: 20px;
+  margin-right: 10px;
+}
+.pages li a span {
+  color: #ccc;
+  font-size: 23px;
+}
+.logout{
+  margin-top: 77%;
+  margin-bottom: 150px;
+  margin-left: 120px;
+}
+.logout a{
+  text-decoration: none;
+  color: #ccc;
+  font-size: 23px;
+}
+
+/* Middle Container */
+.part1{
+  padding: 35px 50px;
+}
+.schedule{
+  margin: 10px 0;
+}
+.h1{
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+.menuBar li a{
+  text-decoration: underline;
+  font-size: 20px;
+  list-style: none;
+  color: black;
+}
+.menuBar li {
+  list-style: none;
+}
+.blocks{
+  margin-top: 20px;
+}
+.div{
+  background-color: white;
+  border-radius: 10px ;
+  margin: 10px 0;
+  padding: 20px;
+  box-shadow: rgb(148, 139, 139) 5px 5px 10px 2px;
+}
+.div:hover{
+  background-color: black;
+  box-shadow: rgb(148, 139, 139) 5px 5px 10px 2px;
+}
+.div span{
+  padding: 20px;
+  background-color: #FFE6DF;
+  border-radius: 4px ;
+}
+.div div h2{
+  color: black;
+}
+.div div p{
+  color: black;
+}
+
+.part2{
+  padding: 0 50px;
+  margin-top: 10px;
+}
+.bar{
+  background-color: #F7F7F7;
+  border-radius: 4px ;
+}
+.head{
+  padding: 20px;
+}
+.head h2{
+  font-size: 20px;
+  font-weight: bold;
+}
+.head div a i{
+  width: 20px;
+  height: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.img1{
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+/* Right Container css */
+.date{
+  background-color: #FFF8F5;
+  border-radius: 4px;
+  padding: 10px 10px 30px 10px;
+}
+.box{
+  margin: 30px 42px 50px 40px;
+  border: none;
+}
+.box:hover{
+  border: black solid 2px;
+  border-radius: 10px;
+}
+.box div{
+   background-color: #FCE7DF;
+   border-radius: 4px;
+}
+.box div p{
+  align-items: center;
+}
+.box p{
+  margin-top: 20px;
+}
+.div1{
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px ;
+  margin: 10px 0;
+  padding: 20px;
+}
+.div1 span{
+  padding: 20px;
+  background-color: #FFE6DF;
+  border-radius: 4px ;
+}
+.div1 div h2{
+  color: black;
+}
+.div1 div p{
+  color: black;
+}
