@@ -10,6 +10,7 @@ const Middle = () => {
                    </div>
                     <div>
                        <span>Aug 5, 2021</span>
+                       
                        <span>ICON  </span>
                     </div>
                 </div>
