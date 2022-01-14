@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-family: 'Nunito', sans-serif;
 }
 ol, ul {
   list-style: none;
@@ -53,15 +54,14 @@ html{
   scroll-behavior: smooth;
 }
 .containerleft{
-  width: 270px;
   margin: 0;
-  height: 100%;
+  height: 100vh;
+  padding: 0 5rem;
+  position: relative;
 
 }
 .container{
-  max-width: 850px;
-  border: 1px solid black;
-  width: 100%;
+  flex: 0 1 45%;
 }
 .flex{
   display: flex;
@@ -84,21 +84,21 @@ html{
 .color{
   color: white;
 }
+a {
+  text-decoration: none  ;
+}
 
 
 /* Left Container css */
 nav{
   background-color: black;
-  height: 100%;
+}
+.pages {
+  margin-top: 5rem;
 }
 .logo a img{
-  width: 50px;
-  height: 50px;
-  margin: 70px 0px 0px 80px;
-}
-.pages{
-  margin-top: 50px;
-  margin-left: 70px;
+  width: 2rem;
+  margin-top: 3rem;
 }
 .pages li {
   margin-top: 40px;
@@ -106,47 +106,65 @@ nav{
 .pages li a{
    text-decoration: none;
 }
-.pages li i{
-  width: 10px;
-  color: white;
-  height: 20px;
-  margin-right: 10px;
-}
-.pages li a span {
-  color: #ccc;
-  font-size: 23px;
-}
-.logout{
-  margin-top: 77%;
-  margin-bottom: 150px;
-  margin-left: 120px;
-}
 .logout a{
-  text-decoration: none;
-  color: #ccc;
-  font-size: 23px;
+  font-size: 1.2rem;
+  color: gray;
 }
+.left_icons {
+  color: gray;
+  font-size: 1.2rem;
+  margin-right: 1rem !important;
+}
+.left_nav_li {
+  color: gray;
+  list-style: none;
+}
+.left_nav_li:hover {
+  cursor: pointer;
+  color: white;
+}
+ .left_nav_li:hover .left_icons {
+  color: white !important;
+}
+.left_nav_li h2 {
+  font-size: 1.2rem;
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3rem;
+}
+.logout:hover a, .logout:hover .left_icons {
+  color: white;
+}
+
 
 /* Middle Container */
 .part1{
-  padding: 35px 50px;
+  padding: 2rem 3rem ;
 }
-.schedule{
-  margin: 10px 0;
-}
+
 .h1{
-  font-size: 30px;
+  font-size: 1.5rem;
   color: black;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 .menuBar li a{
-  text-decoration: underline;
-  font-size: 20px;
+  font-size: 1.2rem;
   list-style: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.541);
 }
 .menuBar li {
   list-style: none;
+}
+.menuBar {
+  margin-top: 2rem;
+}
+.recent_active {
+  text-decoration:  underline;
+  color: black !important;
+  font-weight: bold;
 }
 .blocks{
   margin-top: 20px;
@@ -156,16 +174,16 @@ nav{
   border-radius: 10px ;
   margin: 10px 0;
   padding: 20px;
-  box-shadow: rgb(148, 139, 139) 5px 5px 10px 2px;
+  box-shadow: rgba(148, 139, 139, 0.171) 5px 5px 10px 2px;
 }
 .div:hover{
   background-color: black;
-  box-shadow: rgb(148, 139, 139) 5px 5px 10px 2px;
+  cursor: pointer;
 }
 .div span{
-  padding: 20px;
-  background-color: #FFE6DF;
-  border-radius: 4px ;
+  padding: 1.3rem;
+  background-color: bisque;
+  border-radius: 8px ;
 }
 .div div h2{
   color: black;
@@ -175,12 +193,13 @@ nav{
 }
 
 .part2{
-  padding: 0 50px;
-  margin-top: 10px;
+  padding: 0  3rem;
+  margin-bottom: 2rem;
 }
 .bar{
-  background-color: #F7F7F7;
-  border-radius: 4px ;
+  background-color: #f2eaea;
+  border-radius: 12px ;
+  padding: 2rem 3rem;
 }
 .head{
   padding: 20px;
@@ -199,27 +218,147 @@ nav{
   width: 300px;
   height: 300px;
 }
+.fa-angle-down {
+  font-size: 1.3rem;
+  margin-left: 0.6rem;
+}
+.date_aug {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.blocks_div h2, .blocks_div p{
+margin-bottom: 0.4rem;
+letter-spacing: 1px;
+}
+.blocks_div {
+  margin-left: 2rem;
+}
+.photo_one {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 100 !important;
+}
+.photo_two {
+  z-index: 200 !important;
+}
+.photo_three {
+  z-index: 300 !important;
+}
+.middle_box {
+  position: relative;
+  padding: 1.5rem 1rem;
+}
+.photos_div {
+  position: absolute;
+  right: 1rem;
+}
+.middle_box:hover .blocks_div h2, .middle_box:hover .blocks_div p {
+  color: white !important;
+}
+.middle_box:hover span {
+  background-color: white !important;
+}
 
-
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(252, 149, 149, 0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+              background-color: #ff3300;
+}
+.inner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+              inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+               -0.5px -0.5px 0px  rgba(255, 255, 255, 1),
+               0.5px 0.5px 0px  rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+                background-color: #F7F7F7;
+              }
+circle {
+  fill: none;
+  stroke: #3A2232;
+  stroke-width: 20px;
+  stroke-dasharray: 300;
+  /* stroke-dasharray: 0; */
+}
+.progress_bar {
+  position: relative;
+  margin-left: 2rem;
+}
+svg {
+  position: absolute;
+  top: 0;
+}
+.number_one {
+  font-size: 0.7rem;
+  background-color: bisque;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  z-index: 1000;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.number_two {
+  font-size: 0.7rem;
+  background-color: bisque;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  z-index: 1000;
+}
+.progress_bar_dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ff3300;
+  border-radius: 50%;
+} 
+.progress_bar_data h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 0.3rem;
+}
+.progress_bar_data p{
+font-size: 0.8rem;
+margin-left: 1rem;
+}
+.progress_bar_data {
+  margin-top: 2rem;
+  line-height: 1.3;
+}
 
 
 /* Right Container css */
 .date{
   background-color: #FFF8F5;
   border-radius: 4px;
-  padding: 10px 10px 30px 10px;
+  padding: 2rem 3rem;
 }
 .box{
-  margin: 30px 42px 50px 40px;
   border: none;
+  text-align: center;
+  padding: 1rem 1rem ;
 }
 .box:hover{
-  border: black solid 2px;
+  border: 1px solid black;
   border-radius: 10px;
 }
 .box div{
    background-color: #FCE7DF;
-   border-radius: 4px;
+   border-radius: 8px;
+   padding: 0.3rem 0;
+}
+.box div center p {
+  font-weight: bolder;
 }
 .box div p{
   align-items: center;
@@ -233,6 +372,7 @@ nav{
   border-radius: 10px ;
   margin: 10px 0;
   padding: 20px;
+  position: relative;
 }
 .div1 span{
   padding: 20px;
@@ -244,4 +384,163 @@ nav{
 }
 .div1 div p{
   color: black;
+}
+input {
+  width: 230%;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: #F2EAEA;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+}
+input::placeholder {
+  color: black;
+  margin-left: 1rem;
+}
+.search {
+  position: relative;
+}
+.fa-search {
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+}
+.photo_input {
+  background-color: #ff3300;
+  padding: 0.3rem;
+}
+.fa-arrow-right {
+  margin-left: 1rem;
+}
+.files {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.part2_color {
+  background-color: black !important;
+  color: white;
+  border-radius: 13px;
+}
+.right_part_two_box h2 {
+  font-size: 1.05rem;
+  margin-right: 1.3rem;
+}
+.div1:hover {
+  background-color:  black;
+  color: white;
+  cursor: pointer;
+}
+.div1:hover .part2_color {
+  background-color: white !important;
+  color: black;
+}
+.div1:hover .blocks_div h2, .div1:hover .blocks_div p, .div1:hover .right_part_two_box h2 {
+  color: white;
+}
+.meeting {
+  margin-top: 1.5rem;
+}
+
+.cross, .hamberger_menu {
+  display: none !important;
+}
+@media screen and (max-width:768px) {
+  .container {
+    flex: 0 1 98%;
+  }
+  html {
+    font-size: 12px;
+  }
+  .containerleft {
+    display: none ;
+  }
+  .mini_wrap {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:411px) {
+  .container {
+    flex: 0 1 98%;
+  }
+  html {
+    font-size: 8px;
+  }
+  .containerleft {
+    display: none;
+  }
+  .mini_wrap {
+    flex-wrap: wrap;
+  }
+  input {
+    width: 80%;
+  }
+  .middle {
+    margin-top: 5rem;
+  }
+  .photo_input {
+    widows: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  .mobile_input {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+  }
+  .hamberger_menu {
+    font-size: 2rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+    display: inline-block !important;
+  }
+
+.container_left_display {
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  height:100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  z-index: 100000;
+}
+
+.cross {
+  background-color: none;
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  font-size: 3rem;
+  color: white !important;
+  z-index: 1000000000000;
+}
+.left_none {
+  display: none;
+}
+.crossDisplay {
+  display: block !important;
+}
+.Progress, .meeting, .right_bottom {
+  padding: 0 1rem;
+}
+.pages li h2, .pages li i, .logout a, .logout i{
+  font-size: 2.3rem ;
+}
+.logo a img{
+  width: 20px !important;
+}
+.pages {
+  text-align: center;
+  width: 30%;
+  margin: 15rem 10rem;
+}
+.left_nav_li {
+  margin-bottom: 8rem;
+}
 }

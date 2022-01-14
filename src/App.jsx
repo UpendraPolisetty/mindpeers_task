@@ -5,7 +5,7 @@ import Right from './Components/Right';
 
 function App() {
   return (
-    <div className="App flex ">
+    <div className="App flex mini_wrap">
       <Left/>
       <Middle/>
       <Right/>
